@@ -11,41 +11,35 @@
 		<van-cell icon="success" v-for="item in list" :key="item" :title="item" />
 	</div>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 // import { defineComponent } from 'vue'
-export default defineComponent({
-	name: 'Home',
-	props: {},
-	setup() {
-		const list = [
-			'create-vue',
-			'vite 2 + vue 3.2',
-			'配置 ip 访问项目',
-			'配置多环境变量',
-			'配置 alias 别名',
-			'Sass 全局样式',
-			'Vue-router',
-			'Pinia 状态管理',
-			'使用 Mock 数据',
-			'配置 proxy 跨域',
-			'静态资源使用',
-			'Axios 封装及接口管理',
-			'vue-request 管理接口',
-			'VantUI 组件按需加载',
-			'viewport 适配方案',
-			'适配苹果距离底部距离',
-			'动态设置 title',
-			'配置 Jssdk',
-			'vconsole 移动端调试',
-			'本地存储 storage 封装',
-			'Eslint+Pettier 统一开发规范',
-			'husky + lint-staged 提交校验'
-		]
-		return {
-			list
-		}
-	}
-})
+// import { UserDevelopRecordList } from '@/api/authController'
+// import { useAuthStore } from '@/store/auth';
+// onMounted(() => {
+	// token
+// 	state.params = window.location.href
+// 	if(!userStore.token){
+// 		state.token = window.location.href.split('=')[1];
+// 	}else {
+// 		state.token =userStore.token
+// 	}
+	
+// 	console.log(state.token)
+// 	userStore.saveToken(state.token);
+// 	getUserDevelopRecordList();
+// });
+
+// const getUserDevelopRecordList = () => {
+// 	UserDevelopRecordList({ page: 1, limit: 10 }).then(res=> {
+// 		console.log(res, 'kk');
+// 		Toast.loading({
+//  		 message: '加载中...',
+//   		forbidClick: true,
+// });
+// 		state.list = res.data.list
+	// })
+		
+
 </script>
 <style lang="scss" scoped>
 .home-container {

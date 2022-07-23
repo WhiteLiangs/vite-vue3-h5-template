@@ -48,7 +48,7 @@ service.interceptors.response.use(
 		const res = response.data
 		if (res.code !== 0) {
 			// token 过期
-			if (res.code === 401) {
+			if (res.code === 886) {
 				// 警告提示窗
 				return
 			}
